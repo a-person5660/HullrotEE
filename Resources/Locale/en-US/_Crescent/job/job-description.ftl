@@ -35,6 +35,7 @@ job-description-shipbreaker = Repair Syndicate vessels, take the others apart fo
 job-description-foreman = Coordinate the SAWs. Lead pirate boardings. Scrap vessels.
 ghost-role-information-CS-core-description = An advanced artificial intelligence created by Cybersun. You have been operating for hundreds of years, complete the goals of CDT, and protect your ship and crew.
 ghost-role-information-syndicate-cyborg-description = You are a piece of technology lost to the ages fulfill your laws and glorious to Cybersun.
+ghost-role-information-GSC-core-description = An advanced artificial intelligence created by automated systems in the fog and then repaired by GSC. You have been operating for hundreds of years, complete the goals of GSC, and protect your ship and crew.
 
 # empire
 

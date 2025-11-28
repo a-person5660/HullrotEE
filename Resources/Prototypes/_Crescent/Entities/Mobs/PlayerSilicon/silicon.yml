@@ -104,13 +104,11 @@
       settings: default
   - type: LanguageKnowledge
     speaks:
-    - SolCommon
     - RobotTalk
     - Freespeak
     - Tradeband
     understands:
     - TauCetiBasic
-    - SolCommon
     - RobotTalk
     - Freespeak
     - Tradeband
@@ -126,3 +124,57 @@
   - CS Ritian
   - CS Yu Yi
   - CS Zhulong
+
+- type: entity
+  id: PlayerStationAiGSC
+  parent: PlayerStationAiEmpty
+  suffix: Ghost Role
+  name: CDT AI
+  components:
+  - type: ContainerComp
+    proto: AiHeldHull
+    container: station_ai_mind_slot
+  - type: ContainerFill
+    containers:
+      station_ai_mind_slot:
+      - StationAiBrainCS
+  - type: Sprite
+    sprite: _Crescent/Structures/Decoration/
+    layers:
+    - state: base
+    - state: ai
+      shader: unshaded
+  - type: Anchorable
+
+- type: entity
+  id: StationAiBrainGSC
+  parent: StationAiBrain
+  categories: [ HideSpawnMenu, DoNotMap ]
+  components:
+  - type: Sprite
+  - type: SiliconLawProvider
+    laws: SyndicateStatic
+  - type: GhostRole
+    name: ghost-role-information-GSC-core
+    description: ghost-role-information-GSC-core-description
+    rules: ghost-role-information-GSC-silicon-rules
+    raffle:
+      settings: default
+  - type: LanguageKnowledge
+    speaks:
+    - RobotTalk
+    - Freespeak
+    - Tradeband
+    understands:
+    - TauCetiBasic
+    - RobotTalk
+    - Freespeak
+    - Tradeband
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments: [GorlexNameset]
+
+- type: dataset
+  id: GorlexNameset
+  values:
+  - GSC Infrared Exalted
